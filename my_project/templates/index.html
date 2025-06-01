@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Beast Level Tic Tac Toe - Web Version</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<h1>Beast Level Tic Tac Toe</h1>
+<div class="game-container" role="main" aria-label="Tic Tac Toe Game">
+  <div class="controls" aria-label="Game Settings">
+    <select id="mode-select" aria-label="Select Game Mode">
+      <option value="pvp">Player vs Player</option>
+      <option value="pvc">Player vs Computer</option>
+    </select>
+
+    <select id="difficulty-select" aria-label="Select AI Difficulty" class="hidden">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <select id="symbol-select" aria-label="Choose your symbol (X or O)">
+      <option value="X" selected>Play as X</option>
+      <option value="O">Play as O</option>
+    </select>
+
+    <button id="undo-btn" aria-label="Undo last move" disabled>Undo</button>
+    <button id="restart-btn" aria-label="Restart game">Restart</button>
+    <button id="reset-btn" aria-label="Reset scores">Reset Scores</button>
+  </div>
+
+  <div class="status" role="status" aria-live="polite" id="status-display">Select mode to start</div>
+
+  <div class="scoreboard" aria-label="Scores">
+    <div id="score-x">Player X: 0</div>
+    <div id="score-draw">Draws: 0</div>
+    <div id="score-o">Player O: 0</div>
+  </div>
+
+  <div class="board" id="board" aria-label="Tic Tac Toe Board" role="grid" tabindex="0">
+    <div class="cell" role="gridcell" aria-label="Row 1 Column 1" data-cell data-index="0"></div>
+    <div class="cell" role="gridcell" aria-label="Row 1 Column 2" data-cell data-index="1"></div>
+    <div class="cell" role="gridcell" aria-label="Row 1 Column 3" data-cell data-index="2"></div>
+    <div class="cell" role="gridcell" aria-label="Row 2 Column 1" data-cell data-index="3"></div>
+    <div class="cell" role="gridcell" aria-label="Row 2 Column 2" data-cell data-index="4"></div>
+    <div class="cell" role="gridcell" aria-label="Row 2 Column 3" data-cell data-index="5"></div>
+    <div class="cell" role="gridcell" aria-label="Row 3 Column 1" data-cell data-index="6"></div>
+    <div class="cell" role="gridcell" aria-label="Row 3 Column 2" data-cell data-index="7"></div>
+    <div class="cell" role="gridcell" aria-label="Row 3 Column 3" data-cell data-index="8"></div>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
