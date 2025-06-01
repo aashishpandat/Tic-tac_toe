@@ -49,11 +49,11 @@ A simple and interactive web-based Tic Tac Toe game built with **Python Flask**.
 
 ### Game Board
 
-![Game Board](images/screenshot1.png)
+![Game Board](images/screenshot.png)
 
 ### Game in Progress
 
-![Game In Progress](images/screenshot2.png)
+![Game In Progress](images/screenshot1.png)
 
 
 Made with ❤️ by Aashish Jha
