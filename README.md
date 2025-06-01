@@ -45,6 +45,16 @@ A simple and interactive web-based Tic Tac Toe game built with **Python Flask**.
     ```cpp
     http://127.0.0.1:5000
 
+## Screenshots
+
+### Game Board
+
+![Game Board](images/screenshot1.png)
+
+### Game in Progress
+
+![Game In Progress](images/screenshot2.png)
+
 
 Made with ❤️ by Aashish Jha
 https://github.com/aashishpandat | aashishjha976@gmail.com
